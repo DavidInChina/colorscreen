@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar_without_icon" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/media_frame_layout" />
+    </FrameLayout>
+</LinearLayout>

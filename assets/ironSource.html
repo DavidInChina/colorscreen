@@ -1,0 +1,40 @@
+<html>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background: black;
+        }
+    </style>
+    <body>
+        <script>
+            function displayMessage(evt) {
+                if (evt.data == 'impression' || evt.data == 'complete' || evt.data == 'click' || evt.data == 'error') {
+                    window.ironSourceHandler.notify(evt.data);
+                }
+            }
+            window.addEventListener("message", displayMessage, false);
+            function loadAd(adUrl, userId, bundleId, appStoreUrl, appName, appVersion, width, height) {
+                // don't change the code below here
+                var ifr = document.createElement('iframe');
+                ifr.style.width = ifr.width = width || '100%';
+                ifr.style.height = ifr.height = height || '100%';
+                ifr.style.overflow = 'hidden';
+                ifr.scrolling = 'no';
+                ifr.frameBorder = 0;
+                if (ifr.attachEvent){
+                    ifr.attachEvent("onload", function(){
+                        window.ironSourceHandler.onLoaded();
+                    });
+                } else {
+                    ifr.onload = function(){
+                        window.ironSourceHandler.onLoaded();
+                    };
+                }
+                ifr.src = adUrl + '?w=' + width + '&h=' + height + '&bundleId=' + bundleId + '&appStoreUrl=' + encodeURIComponent(appStoreUrl) + '&appName=' + encodeURIComponent(appName) + '&appVersion=' + appVersion + '&uid=' + userId + '&cb=' + new Date().getTime();
+                document.body.appendChild(ifr);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@id/us" android:title="US" />
+        <item android:id="@id/CN" android:title="CN" />
+        <item android:id="@id/eu" android:title="EU" />
+        <item android:id="@id/ap" android:title="AP" />
+    </group>
+</menu>

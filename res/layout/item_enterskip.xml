@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_ad_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_launch_default_load_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.cootek.business.func.hades.BBaseMaterialViewCompat android:id="@id/av_launch_ad_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/tv_aut_vanish_container" android:background="@drawable/bg_skip" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/btn_launch_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="skip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="end" android:id="@id/tv_launch_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:fontFamily="monospace" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/tv_time_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="s" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_launch_bottom_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_ad_container" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_launch_bottom_icon" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff484848" android:id="@id/tv_launch_bottom_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff5c5c5c" android:id="@id/tv_launch_bottom_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Filter Blue Light  Eye protect" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

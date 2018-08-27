@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.cootek.colibrow.incomingcall.view.WaveView android:id="@id/guide_wave_view" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+    <ImageView android:id="@id/guide_finger" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="22.0dip" android:layout_marginTop="22.0dip" android:src="@mipmap/finger_two" />
+</RelativeLayout>

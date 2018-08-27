@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/debug_mode" android:title="Debug Mode" android:checkable="true" android:contentDescription="enable b-base debug mode" />
+    <item android:id="@id/send_email" android:title="Send Email" android:checkable="false" android:contentDescription="Send all debug info by email" />
+</menu>

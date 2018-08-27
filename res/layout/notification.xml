@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_launcher" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textStyle="normal" android:textColor="@color/black" android:id="@id/notification_seven_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reminder_title" android:maxLines="1" android:fontFamily="sans-serif-medium" />
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/notification_below" android:id="@id/notification_seven_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reminder_summary" android:maxLines="2" android:fontFamily="sans-serif" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+                <TextView android:textColor="@color/white" android:background="@drawable/notification_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="@string/reminder_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

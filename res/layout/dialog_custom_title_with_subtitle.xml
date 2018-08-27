@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:orientation="vertical" android:id="@id/title_frame" android:paddingLeft="@dimen/material_dialog_title_padding_left" android:paddingTop="@dimen/material_dialog_title_padding_top" android:paddingRight="@dimen/material_dialog_title_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="@dimen/material_dialog_icon_margin_right" android:scaleType="fitCenter" />
+        <TextView android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/RtlOverlay.DialogWindowTitle.AppCompat" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/material_dialog_subtitle_test" android:id="@id/sub_title" android:paddingTop="@dimen/material_dialog_sub_title_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

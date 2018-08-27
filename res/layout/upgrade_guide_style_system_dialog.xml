@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_margin="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/upgrade_bg_style_system_dialog" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="New Version Found!" />
+        <com.cootek.business.ui.MaxHeightScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:maxHeight="150.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/upgrade_info" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1. fixed some bugs. \n2. fixed some bugs.\n3. fixed some bugs." />
+        </com.cootek.business.ui.MaxHeightScrollView>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+            <TextView android:layout_gravity="start" android:id="@id/close" android:background="?selectableItemBackground" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel" />
+            <TextView android:textColor="#ff18aa05" android:layout_gravity="end" android:id="@id/update" android:background="?selectableItemBackground" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

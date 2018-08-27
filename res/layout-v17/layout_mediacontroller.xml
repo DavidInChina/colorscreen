@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/centerPlayContainer" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/imgViewPlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/img_src_play_big" />
+        <ImageView android:id="@id/imgViewPause" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/bottomViewContainer" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip">
+        <FrameLayout android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:layout_alignParentStart="true">
+            <ImageView android:id="@id/imgViewPlayLeftBottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/img_src_play_small" />
+            <ImageView android:id="@id/imgViewPauseLeftBottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/img_src_pause_small" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/frameContainerFullscreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/imgViewFullscreen" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:src="@mipmap/img_src_fullscreen_enable" android:layout_marginEnd="5.0dip" />
+            <ImageView android:id="@id/imgViewCollapseFullscreen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:src="@mipmap/img_src_fullscreen_disable" android:layout_marginEnd="5.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/frameContainerVolumn" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/frameContainerFullscreen" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" android:layout_toStartOf="@id/frameContainerFullscreen">
+            <ImageView android:id="@id/imgViewAudioMute" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/img_src_volumn_enable" />
+            <ImageView android:id="@id/imgViewAudioUnMute" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/img_src_volumn_disable" />
+        </FrameLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/txtViewTimeLeft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_centerVertical="true" android:layout_marginStart="3.0dip" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/prograssBar" android:background="#ffffffff" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/bar_color" android:layout_above="@id/bottomViewContainer" android:layout_centerInParent="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" style="?android:progressBarStyleHorizontal" />
+</RelativeLayout>

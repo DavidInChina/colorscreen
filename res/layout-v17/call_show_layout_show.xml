@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <pl.droidsonroids.gif.GifImageView android:id="@id/gifContainer" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/nativeContainer" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <cn.cootek.colibrow.incomingcall.view.AvatarImageView android:id="@id/avastar" android:clickable="false" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginTop="120.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="@color/colorTitleText" android:id="@id/phoneNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:shadowColor="@color/background_shadow" android:shadowRadius="10.0" android:layout_below="@id/avastar" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="24.0sp" android:textColor="@color/colorTitleText" android:id="@id/contractName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:shadowColor="@color/background_shadow" android:shadowRadius="6.0" android:layout_below="@id/phoneNumber" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/reject_btn" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="60.0dip" android:layout_marginTop="130.0dip" android:src="@drawable/acb_phone_call_refuse" android:layout_below="@id/contractName" />
+    <FrameLayout android:paddingRight="60.0dip" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/reject_btn" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/accept_btn" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/acb_phone_call_answer" />
+    </FrameLayout>
+</RelativeLayout>

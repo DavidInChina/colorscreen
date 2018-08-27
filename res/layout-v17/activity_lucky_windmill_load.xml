@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cootek.tark.windmill.ui.RainingIconView android:id="@id/raining_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/load_fail_view" android:background="#cf000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center" android:background="@drawable/bg_ad_load_fail" android:layout_width="300.0dip" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/btn_fail_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_close_grey" />
+            </FrameLayout>
+            <ImageView android:id="@id/fail_img" android:layout_width="186.0dip" android:layout_height="186.0dip" android:layout_marginTop="26.0dip" android:src="@drawable/windmill_fail_img" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="20.0sp" android:textColor="#ff353535" android:id="@id/txt_load_fail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/windmill_load_fail_title" android:maxLines="1" android:layout_below="@id/fail_img" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_try_again" android:background="@drawable/bg_btn_windmill_try_again" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="24.0dip" android:text="@string/windmill_try_again" android:layout_below="@id/txt_load_fail" android:textAlignment="center" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

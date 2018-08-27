@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:attrs="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/media_frame_layout" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/half_icon_large_size">
+        <com.mobutils.android.mediation.sdk.MaterialImageView android:id="@id/icon" android:layout_width="@dimen/icon_large_size" android:layout_height="@dimen/icon_large_size" android:layout_marginTop="@dimen/dialog_style_small_icon_margin" android:layout_marginBottom="@dimen/dialog_style_small_icon_margin" android:scaleType="fitCenter" attrs:cornerRadius="@dimen/icon_corner" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/feeds_title_text_size" android:textStyle="bold" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_style_ad_padding" android:layout_marginRight="@dimen/dialog_style_ad_padding" android:maxLines="2" android:singleLine="false" />
+    <TextView android:textSize="@dimen/dialog_style_text_small_size" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/description" android:paddingTop="@dimen/ad_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_style_ad_padding" android:layout_marginRight="@dimen/dialog_style_ad_padding" android:maxLines="2" android:singleLine="false" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/large_button_height" android:layout_marginLeft="@dimen/dialog_style_ad_padding" android:layout_marginTop="@dimen/dialog_style_margin_top" android:layout_marginRight="@dimen/dialog_style_ad_padding" android:layout_marginBottom="@dimen/dialog_style_margin_bottom">
+        <TextView android:textSize="@dimen/feeds_button_text_large_size" android:textStyle="bold" android:ellipsize="end" android:gravity="center" android:id="@id/cta" android:padding="@dimen/feeds_button_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/open_connection" android:singleLine="true" />
+        <com.mobutils.android.mediation.shimmer.ShimmerView android:id="@id/cta_shimmer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

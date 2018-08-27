@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.color.call.flash.colorphone.widget.FingerGuideView android:id="@id/fgv_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fg_ishorizontal="false" />
+</LinearLayout>

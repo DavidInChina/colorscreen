@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/rate_star_normal" android:background="@drawable/guiding_rate_star" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="5.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/rate_star_h" android:background="@drawable/guiding_rate_star_h" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="5.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/guiding_rate_btn" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/rate_star_circle" />
+</FrameLayout>

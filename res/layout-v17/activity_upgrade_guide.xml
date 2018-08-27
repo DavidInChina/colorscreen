@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/upgrade_guide_image" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/close" android:background="@drawable/upgrade_close_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/upgrade_guide_close" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/upgrade_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff18aa05" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="7.0dip" android:text="New Version Found!" android:layout_marginStart="24.0dip" />
+        <TextView android:textSize="12.0sp" android:gravity="center_horizontal" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginBottom="10.0dip" android:text="v1.1.0 was released" android:layout_marginStart="24.0dip" />
+        <com.cootek.business.ui.MaxHeightScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:maxHeight="150.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/upgrade_info" android:paddingLeft="24.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1. fixed some bugs. \n2. fixed some bugs.\n3. fixed some bugs." android:lineSpacingExtra="8.0sp" android:paddingStart="24.0dip" android:paddingEnd="8.0dip" />
+        </com.cootek.business.ui.MaxHeightScrollView>
+        <Button android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/update" android:background="@drawable/upgrade_btn_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="20.0dip" android:text="Update Now" android:textAllCaps="false" />
+    </LinearLayout>
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="40.0dip" />
+</LinearLayout>

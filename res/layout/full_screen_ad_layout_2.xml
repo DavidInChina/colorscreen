@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:attrs="http://schemas.android.com/apk/res-auto">
+    <com.mobutils.android.mediation.core.MaterialMediaView android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="wrap_content" attrs:sdkFitType="inside" attrs:sdkMediaStyle="album" />
+    <TextView android:textSize="9.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tag" android:background="@drawable/material_tag_bg" android:layout_width="@dimen/tag_width" android:layout_height="@dimen/tag_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="12.0dip" android:text="@string/ad_tag" />
+    <com.mobutils.android.mediation.sdk.MaterialImageView android:id="@id/icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="-30.0dip" android:scaleType="fitCenter" android:layout_below="@id/banner" android:layout_centerHorizontal="true" attrs:cornerRadius="@dimen/full_screen_icon_corner" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/icon">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="36.0dip" android:layout_marginBottom="10.0dip" android:maxLines="1" />
+        <TextView android:textSize="14.0sp" android:textColor="#80000000" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" android:maxLines="3" android:lineSpacingExtra="0.0dip" />
+        <Button android:textSize="16.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/cta" android:background="@null" android:layout_width="164.0dip" android:layout_height="36.0dip" android:layout_marginTop="20.0dip" android:text="@string/open_connection" android:maxLines="1" android:textAllCaps="false" />
+    </LinearLayout>
+    <include layout="@layout/full_screen_brand_area_layout_blue" />
+</RelativeLayout>

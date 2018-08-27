@@ -1,0 +1,7 @@
+<Rules>
+    <pushEvent fid='strategy'>
+        <strategyToast statusbarQuietDays='0' startupQuietDays='0' toolbarQuietDays='0'>
+            <action action='dummy' />
+        </strategyToast>
+    </pushEvent>
+</Rules>

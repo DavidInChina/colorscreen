@@ -1,0 +1,14 @@
+{
+  "switches": [
+    {
+      "on_sale": true,
+      "type": "sw95"
+    },{
+      "on_sale": false,
+      "type": "sw96"
+    },{
+      "on_sale": false,
+      "type": "sw94"
+    }
+  ]
+}

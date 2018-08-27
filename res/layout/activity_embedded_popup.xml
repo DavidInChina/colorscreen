@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/ad" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/close" android:background="@drawable/interstitial_close" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_margin="8.0dip" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_flashlight_background" android:background="#ffffff00" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-5.0dip" android:scaleType="centerCrop" android:layout_below="@id/flyout_head" />
+    <FrameLayout android:id="@id/flyout_head" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.color.call.flash.colorphone.widget.StringScrollPicker android:id="@id/frequency_ssp" android:background="@mipmap/flash_light_header" android:layout_width="fill_parent" android:layout_height="186.0dip" app:spv_alignment="center" app:spv_disallow_intercept_touch="true" app:spv_draw_bitmap_height="40.0dip" app:spv_draw_bitmap_mode="size" app:spv_draw_bitmap_width="40.0dip" app:spv_end_color="@android:color/white" app:spv_is_circulation="true" app:spv_item_bitmap="@mipmap/flash_light_item" app:spv_max_line_width="300.0dip" app:spv_max_text_size="13.0dip" app:spv_min_text_size="13.0dip" app:spv_orientation="horizontal" app:spv_start_color="@color/colorAccent" app:spv_visible_item_count="7" />
+        <ViewStub android:id="@id/horizontal_guide" android:layout="@layout/horizontal_guide_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/flyout_head">
+        <ImageView android:id="@id/iv_selected_state" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="10.0dip" android:src="@mipmap/selected_state_flash_light" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <FrameLayout android:id="@id/skin_select_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.599976dip" android:layout_below="@id/iv_selected_state" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/btn_skin_background" />
+            <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/btn_skin_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/btn_skin_top" android:layout_centerInParent="true" />
+                <com.flyco.tablayout.widget.MsgView android:textSize="11.5sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/rtv_skin_msg_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/btn_skin_top" mv:mv_backgroundColor="#fffd481f" mv:mv_isRadiusHalfHeight="true" mv:mv_strokeColor="#ffffffff" mv:mv_strokeWidth="1.0dip" xmlns:mv="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+        </FrameLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/bar_left" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/bar_right" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <com.color.call.flash.colorphone.widget.VerticalSwitchButton android:id="@id/flashlight_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="63.0dip" android:layout_below="@id/skin_select_btn" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:gravity="center" android:id="@id/app_wall" android:background="?selectableItemBackgroundBorderless" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/app_wall_windmill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/appwall_1" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/appwall_2" />
+    </FrameLayout>
+</RelativeLayout>

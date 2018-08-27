@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@id/item_gallery_selected_bg" android:background="@drawable/image_border_yellow" android:visibility="invisible" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/id_index_gallery_item_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerCrop" />
+        <ProgressBar android:layout_gravity="bottom|center" android:id="@id/progressBar" android:visibility="invisible" android:layout_width="38.0dip" android:layout_height="2.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/layer_list_progress_drawable_1" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </FrameLayout>
+</RelativeLayout>

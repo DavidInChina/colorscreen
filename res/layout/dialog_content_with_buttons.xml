@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/material_dialog_item_min_height" android:layout_weight="1.0" />
+    <FrameLayout android:orientation="horizontal" android:id="@id/bottom_panel" android:paddingLeft="@dimen/material_dialog_bottom_bar_padding_horizontal" android:paddingTop="@dimen/material_dialog_bottom_bar_padding_vertical" android:paddingRight="@dimen/material_dialog_bottom_bar_padding_horizontal" android:paddingBottom="@dimen/material_dialog_bottom_bar_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?buttonBarStyle" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgv_appicon" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="20.0dip" android:src="@mipmap/ic_launcher" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/tv_appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="test" android:layout_toRightOf="@id/imgv_appicon" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/cb_select_app" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/CustomCheckboxTheme" />
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.cootek.colibrow.incomingcall.view.TechnologicalAnimationView android:id="@id/animation_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/call_bg_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/acb_phone_theme_technological_bg" android:scaleType="centerCrop" />
+        <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="left" android:id="@id/call_alert_corner_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/acb_phone_theme_technological_corner_0" />
+        <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="left" android:id="@id/call_alert_corner_light_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/acb_phone_theme_technological_corner_light_0" />
+        <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="right" android:id="@id/call_alert_corner_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/acb_phone_theme_technological_corner_1" />
+        <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="right" android:id="@id/call_alert_corner_light_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/acb_phone_theme_technological_corner_light_1" />
+        <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="bottom|center|right" android:id="@id/call_alert_corner_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/acb_phone_theme_technological_corner_2" />
+        <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="bottom|center|right" android:id="@id/call_alert_corner_light_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/acb_phone_theme_technological_corner_light_2" />
+        <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="bottom" android:id="@id/call_alert_corner_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/acb_phone_theme_technological_corner_3" />
+        <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="bottom" android:id="@id/call_alert_corner_light_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/acb_phone_theme_technological_corner_light_3" />
+        <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="bottom|center" android:id="@id/call_alert_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/acb_phone_theme_technological_bottom" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/led_call_container" android:padding="16.0dip" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-30.0dip">
+            <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="15.0" />
+            <FrameLayout android:id="@id/caller_avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="center" android:id="@id/call_alert_icon_holo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/acb_phone_theme_technological_icon_holo" />
+                <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="center" android:id="@id/call_alert_icon_aperture_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/acb_phone_theme_icon_aperture_half" />
+                <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="center" android:id="@id/call_alert_icon_aperture_1" android:layout_width="128.0dip" android:layout_height="128.0dip" android:src="@drawable/acb_phone_theme_icon_aperture_whole" />
+                <ImageView android:layout_gravity="center" android:id="@id/caller_avatar" android:layout_width="108.0dip" android:layout_height="108.0dip" android:src="@drawable/acb_phone_theme_default_technological_caller_avatar" />
+                <cn.cootek.colibrow.incomingcall.view.ScalableImageView android:layout_gravity="center" android:id="@id/call_alert_icon_aperture_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/acb_phone_theme_icon_aperture_piece" />
+            </FrameLayout>
+            <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="6.0" />
+            <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="25.0" />
+            <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="30.0" />
+        </LinearLayout>
+    </cn.cootek.colibrow.incomingcall.view.TechnologicalAnimationView>
+</merge>

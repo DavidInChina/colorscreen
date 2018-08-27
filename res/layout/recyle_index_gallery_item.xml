@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="9.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@id/item_gallery_selected_bg" android:background="@drawable/image_border_yellow" android:visibility="invisible" android:layout_width="41.0dip" android:layout_height="41.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/id_index_gallery_item_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="#ffffffff" android:id="@id/id_index_gallery_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="some info" android:layout_below="@id/fl_item" android:layout_centerHorizontal="true" android:fontFamily="sans-serif" />
+</RelativeLayout>

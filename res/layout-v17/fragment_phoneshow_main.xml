@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="#ff28292e" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fragment_title" android:fontFamily="sans-serif" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TabLayout android:layout_gravity="top" android:id="@id/tabLyout_show_main" android:background="#ff28292e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar" app:tabIndicatorColor="@color/white" app:tabSelectedTextColor="@color/white" app:tabTextColor="#b2ffffff" />
+    <ViewStub android:id="@id/root_permission_top_bar" android:layout="@layout/widget_permission_top_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tabLyout_show_main" />
+    <android.support.v4.view.ViewPager android:id="@id/vp_show_main" android:background="#ff1c1d21" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/root_permission_top_bar" />
+    <FrameLayout android:gravity="center" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true">
+        <com.gbmx.aw.view.AppWallView android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitXY" />
+    </FrameLayout>
+</RelativeLayout>

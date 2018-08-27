@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/rate_us_feature_dlg_bg" android:layout_width="256.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/guiding_rate_dlg_title" android:background="@drawable/rate_us_feature_dlg_title_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/rate_feature_dlg_title" />
+    <RelativeLayout android:id="@id/guiding_rate_btn" android:background="@drawable/rate_us_feature_dlg_btn_bg" android:paddingLeft="20.0dip" android:paddingTop="18.0dip" android:paddingRight="20.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_rate_now_emoji" android:background="@drawable/rate_us_now_emoji" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/rate_yes_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes" android:layout_toRightOf="@id/img_rate_now_emoji" />
+        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rate_feature_desc_rate" android:layout_toRightOf="@id/img_rate_now_emoji" android:layout_below="@id/rate_yes_text" />
+    </RelativeLayout>
+    <View android:background="@color/rate_dlg_bg_color_h" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+    <RelativeLayout android:id="@id/guiding_rate_later_btn" android:background="@drawable/rate_us_feature_dlg_btn_bg" android:paddingLeft="20.0dip" android:paddingTop="18.0dip" android:paddingRight="20.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_rate_later_emoji" android:background="@drawable/rate_us_later_emoji" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/rate_later_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no" android:layout_toRightOf="@id/img_rate_later_emoji" />
+        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rate_feature_desc_later" android:layout_toRightOf="@id/img_rate_later_emoji" android:layout_below="@id/rate_later_text" />
+    </RelativeLayout>
+</LinearLayout>

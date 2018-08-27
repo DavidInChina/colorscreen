@@ -1,0 +1,35 @@
+{
+    "urlpack": {
+        "locale": {
+            "enable": 1,
+            "name": "locale",
+            "value": "zh-cn",
+            "assign": 1
+        },
+        "data_name": {
+            "enable": 1,
+            "name": "data_name",
+            "value": "Presentation",
+            "assign": 0
+        },
+        "api_level": {
+            "enable": 1,
+            "name": "api_level",
+            "value": -1,
+            "assign": 1
+        }
+    },
+    "config": {
+        "enable": 1,
+        "conf_version": 1,
+        "domain_name": {
+            "name": "domain_name",
+            "value": "",
+            "assign": 1
+        },
+        "assign": 1,
+        "connection": "Any",
+        "module_name": "notification_center",
+        "update_interval": 7200
+    }
+}

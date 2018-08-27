@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="切换referrer" android:onClick="changeSF" />
+    <TextView android:id="@id/referrer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/btn_test_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="切换Debug模式" android:onClick="switchDebugMode" />
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="显示权限弹窗" android:onClick="showPermissionDialog" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="创建快捷方式" android:onClick="createShortCut" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="删除快捷方式" android:onClick="removeShortCut" />
+        <TextView android:id="@id/is_shortcut" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="来电提醒" android:onClick="callReminder" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="短信提醒" android:onClick="messageReminder" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="显示来电提醒引导" android:onClick="showLedGuide" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="显示消息提醒引导" android:onClick="showNotiGude" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试子线程post" android:onClick="getTopActivity" />
+        <TextView android:id="@id/top_task" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button android:id="@id/btn_mk_crash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="制造一个崩溃" />
+    <Button android:id="@id/hide_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="隐藏图标" />
+    <Button android:id="@id/show_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="显示图标" />
+    <Button android:id="@id/btn_create_shortcut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="创建快捷方式" />
+</LinearLayout>

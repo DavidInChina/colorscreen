@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_app" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:layout_gravity="center_vertical" android:id="@id/noti_toolbar" android:background="@color/background_setting_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="4.0dip" app:contentInsetStartWithNavigation="0.0dip" app:titleTextAppearance="@style/ToolbarTitle">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/noti_reminder_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+            <android.support.v7.widget.SwitchCompat android:id="@id/sc_open_notireminder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="15.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_app_info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/noti_toolbar" />
+    <cootek.matrix.flashlight.widget.IndexBar android:id="@id/index_bar" android:background="@color/transparent" android:layout_width="200.0dip" android:layout_height="fill_parent" android:layout_below="@id/noti_toolbar" android:layout_alignParentRight="true">
+        <cootek.matrix.flashlight.widget.SideBar android:id="@id/side_bar" android:layout_width="30.0dip" android:layout_height="fill_parent" />
+    </cootek.matrix.flashlight.widget.IndexBar>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_app" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:layout_gravity="center_vertical" android:id="@id/led_flash_toolbar" android:background="@color/background_setting_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:titleTextAppearance="@style/ToolbarTitle">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/led_flash_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <android.support.v7.widget.SwitchCompat android:id="@id/sc_open_led_flash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout android:id="@id/rv_led_flash_mode" android:background="?android:selectableItemBackground" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <ImageView android:id="@id/tag_1" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@mipmap/icon_mode" android:layout_centerVertical="true" />
+        <TextView android:layout_marginLeft="10.0dip" android:text="@string/flicker_mode_t" android:layout_toRightOf="@id/tag_1" style="@style/textview16sp" />
+        <TextView android:id="@id/tv_led_mode" android:layout_marginRight="10.0dip" android:text="test" android:layout_alignParentRight="true" style="@style/textview14sp" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rv_flicker_interval" android:background="?android:selectableItemBackground" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/tag_2" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@mipmap/icon_interval" android:layout_centerVertical="true" />
+        <TextView android:layout_marginLeft="10.0dip" android:text="@string/flicker_interval_t" android:layout_toRightOf="@id/tag_2" style="@style/textview16sp" />
+        <TextView android:id="@id/tv_flicker_interval" android:layout_marginRight="10.0dip" android:text="test" android:layout_alignParentRight="true" style="@style/textview14sp" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rv_flicker_duration" android:background="?android:selectableItemBackground" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/tag_3" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@mipmap/icon_duration" android:layout_centerVertical="true" />
+        <TextView android:layout_marginLeft="10.0dip" android:text="@string/flicker_duration_t" android:layout_toRightOf="@id/tag_3" style="@style/textview16sp" />
+        <TextView android:id="@id/tv_flicker_duration" android:layout_marginRight="10.0dip" android:text="test" android:layout_alignParentRight="true" style="@style/textview14sp" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rv_battery_control" android:background="?android:selectableItemBackground" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/tag_4" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@mipmap/icon_battery_control" android:layout_centerVertical="true" />
+        <TextView android:layout_marginLeft="10.0dip" android:text="@string/battery_control_t" android:layout_toRightOf="@id/tag_4" style="@style/textview16sp" />
+        <TextView android:id="@id/tv_battery_level" android:layout_marginRight="10.0dip" android:text="test" android:layout_alignParentRight="true" style="@style/textview14sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_layout" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/boost_content" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/background" android:background="@color/boost_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <View android:id="@id/boost_foreign_bg" android:background="@color/incoming_boost_foreign_anim_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/boost_content" android:layout_alignTop="@id/boost_content" android:layout_alignRight="@id/boost_content" android:layout_alignBottom="@id/boost_content">
+            <ImageView android:layout_gravity="end" android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="14.0dip" android:src="@drawable/close" android:alpha="0.0" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/logo" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginTop="254.0dip" android:src="@drawable/clean_incoming_complete" android:alpha="0.0" android:scaleX="5.5" android:scaleY="5.5" />
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/clean_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="387.0dip">
+                <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/perfect_memory_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/transparent_ad_cta_color" android:id="@id/perfect_memory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/apply_success" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+        <com.mobutils.android.mediation.core.AdView android:id="@id/ad_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/MemoryCleanAd" />
+        <ImageView android:id="@id/logo_placeHolder" android:visibility="invisible" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="69.0dip" android:layout_marginBottom="25.0dip" android:layout_above="@id/ad_container" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white_ad_cta_color" android:id="@id/reduce_tv_placeHolder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginBottom="25.0dip" android:layout_toRightOf="@id/logo_placeHolder" android:layout_above="@id/ad_container" />
+    </RelativeLayout>
+</RelativeLayout>

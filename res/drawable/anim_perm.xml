@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/perm_1" />
+    <item android:duration="100" android:drawable="@drawable/perm_2" />
+    <item android:duration="100" android:drawable="@drawable/perm_3" />
+    <item android:duration="100" android:drawable="@drawable/perm_4" />
+    <item android:duration="100" android:drawable="@drawable/perm_5" />
+    <item android:duration="100" android:drawable="@drawable/perm_6" />
+    <item android:duration="100" android:drawable="@drawable/perm_7" />
+    <item android:duration="100" android:drawable="@drawable/perm_8" />
+    <item android:duration="100" android:drawable="@drawable/perm_9" />
+    <item android:duration="100" android:drawable="@drawable/perm_10" />
+    <item android:duration="100" android:drawable="@drawable/perm_11" />
+    <item android:duration="100" android:drawable="@drawable/perm_12" />
+</animation-list>

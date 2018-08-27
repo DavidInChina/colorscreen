@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="46.0dip" android:minHeight="@dimen/half_icon_large_size">
+        <com.mobutils.android.mediation.sdk.MaterialImageView android:id="@id/icon" android:layout_width="46.0dip" android:layout_height="46.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/icon">
+            <TextView android:textSize="@dimen/feeds_title_text_size" android:textStyle="bold" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/dialog_style_text_small_size" android:ellipsize="end" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:background="@color/dialog_style_large_color_primary" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="@dimen/feeds_button_text_large_size" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/cta" android:padding="@dimen/feeds_button_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/open_connection" android:singleLine="true" />
+        <com.mobutils.android.mediation.shimmer.ShimmerView android:id="@id/cta_shimmer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/media_frame_layout" />
+    </FrameLayout>
+</LinearLayout>

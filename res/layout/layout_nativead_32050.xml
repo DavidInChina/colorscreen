@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/background_native_banner" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgViewIcon" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="3.0dip" android:layout_centerVertical="true" />
+    <Button android:id="@id/btnAction" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/CTAButtonStyle" />
+    <TextView android:id="@id/txtViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/btnAction" android:layout_toRightOf="@id/imgViewIcon" style="@style/NativeTitleStyle" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="2.0dip" android:layout_toLeftOf="@id/btnAction" android:layout_toRightOf="@id/imgViewIcon" android:layout_alignBottom="@id/imgViewIcon">
+        <com.snipermob.sdk.mobileads.widget.RatingView android:id="@id/ratingView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/txtViewDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:lines="1" style="@style/NativeTitleDesc" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/guiding_rate_dlg_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rate_star_dlg_header" android:scaleType="matrix" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/rate_us_star_dlg_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/guiding_rate_dlg_title" android:paddingTop="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rate_feature_dlg_title" />
+        <TextView android:textSize="14.0sp" android:textColor="#dd000000" android:gravity="center" android:id="@id/guiding_rate_dlg_description" android:paddingLeft="30.0dip" android:paddingTop="10.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rate_star_dlg_desc" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/guiding_rate_stars_panel" android:paddingTop="@dimen/rate_star_pannel_padding" android:paddingBottom="@dimen/rate_star_pannel_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:textColor="@color/white" android:gravity="center" android:id="@id/guiding_rate_later_btn" android:background="@drawable/rate_star_dlg_later_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginTop="@dimen/rate_star_pannel_padding" android:layout_marginRight="45.0dip" android:layout_marginBottom="@dimen/rate_star_pannel_padding" android:text="@string/optpage_user_feedback" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:id="@id/rate_star_finger" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@id/guiding_rate_star_finger" android:background="@drawable/guiding_rate_star_finger" android:layout_width="56.0dip" android:layout_height="56.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mobutils.android.mediation.core.MaterialMediaView android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/ad_tag_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tag" android:background="@drawable/material_tag_bg" android:layout_width="@dimen/tag_width" android:layout_height="@dimen/tag_height" android:layout_margin="@dimen/tag_margin" android:text="@string/ad_tag" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

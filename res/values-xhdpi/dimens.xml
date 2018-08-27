@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="feeds_text_size">13.0sp</dimen>
+    <dimen name="feeds_title_text_size">16.0sp</dimen>
+    <dimen name="feeds_button_text_size">14.0sp</dimen>
+</resources>

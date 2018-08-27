@@ -1,0 +1,54 @@
+{
+  "init": {
+    "goblin":false,
+    "luckwind": true,
+    "switches": true,
+    "ezalter": true
+  },
+  "pkg": "com.color.call.flash.colorphone",
+  "manifestPkg": "com.color.call.flash.colorphone",
+  "usage": {
+    "usage_type": "usage_flashlight"
+  },
+  "appsflyer": {
+    "devKey": "RGuGQNdAkXwPSpJs2o4up8",
+    "gcmId": "gcmId"
+  },
+  "abtest": [
+    {
+      "name": "AB_A",
+      "widget": 100
+    }
+  ],
+  "ezalter": {
+    "diversions": []
+  },
+  "material": {
+    "enter": {
+      "type": "popup",
+      "davinciId": "2740"
+    },
+    "luckwind": {
+      "type": "popup",
+      "davinciId": "2738"
+    },
+    "exit": {
+      "type": "popup",
+      "davinciId": "2740"
+    },
+    "others": [
+      {
+        "type": "popup",
+        "davinciId": "2739"
+      },
+      {
+        "type": "popup",
+        "davinciId": "2736"
+      },
+      {
+        "type": "popup",
+        "davinciId": "2735"
+      }
+    ]
+  }
+}

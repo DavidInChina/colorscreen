@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#c2000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ad_view" android:paddingTop="45.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/drink" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mediation_clean_up_water_random" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        <FrameLayout android:id="@id/cleanup_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="16.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/cleanup_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="31.0dip" android:layout_marginRight="31.0dip" android:maxLines="3" />
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="14.0" />
+                <FrameLayout android:id="@id/banner_frame" android:background="#ffffffff" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" />
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="45.0" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff3cb0fc" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clean_up_exit" android:onClick="closePopup" android:alpha="0.5" />
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="55.0" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>
